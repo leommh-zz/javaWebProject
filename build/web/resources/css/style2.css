@@ -1,0 +1,76 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15/07/2018, 20:58:16
+    Author     : Leonardo
+*/
+
+html{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-size: auto;
+}
+
+#header{
+    background: rgba(255, 255, 255, 0.18823529411764706);
+    padding: 8px;
+    position: relative;
+    top: 0;
+    margin-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#footer{
+    background: rgba(255, 255, 255, 0.18823529411764706);
+    padding: 8px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#conteudo{
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.formFirstInput{
+    color: rgba(84, 6, 141, 0.45);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(84, 6, 141, 0.45);
+}
+
+#txtMain{
+    color: rgba(50, 15, 88, 0.45);
+}
+
+#txtFooter{
+    color: rgba(50, 15, 88, 0.45);
+    position: relative;
+    top: 8px;
+}
+
+h3{
+    color: rgba(84, 6, 141, 0.45)
+}
+
+.btnFirst{
+    color: rgba(84, 6, 141, 0.45);
+    background-color: rgba(255, 255, 255, 0.09019607843137255);
+    border-color: rgba(84, 6, 141, 0.45);
+}
+
+.btnFirst:hover{
+    color: rgba(84, 6, 141, 0.45);
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+
