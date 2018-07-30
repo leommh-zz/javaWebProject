@@ -7,23 +7,23 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-    
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
         <link href="<c:url value="resources/css/style2.css" />" rel="stylesheet" type="text/css" />
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-
-        <title>JSP Page</title>
+        <link rel="icon" type="imagem/png" href="<c:url value="resources/img/java.png"/>" />
+        <title>Home</title>
     </head>
-    <body style="background-image: url('<c:url value="resources/img/background.png"/>')">
+    <body>
         
         <header id="header">
             <div class="row">
                 <div class="col">
                     <div class="container">
+                        <p class="logo">
+                            <a href="index" title="home">
+                                <img src="<c:url value="resources/img/java.png"/>">
+                            </a>
+                        </p>
                         <h2 id="txtMain">Java Web - Training</h2>
                     </div>
                 </div>
@@ -31,10 +31,35 @@
         </header>
         
         <div class="container" id="conteudo" />
-            <h3>Cadastrar Contas</h3>
-            
-            <a href="cadastroContaCorrente" class="btn btnFirst" role="button">Cadastrar Conta Corrente</a>
-            <a href="cadastroContaPoupanca" class="btn btnFirst" role="button">Cadastrar Conta Poupanca</a>
+
+            <h1 class="title center">Bem Vindo!</h1>
+
+            <ul class="painel">
+                <li>
+                    <a href="cadastrarAlguem" role="button">
+                        <img src="<c:url value="resources/img/add-user.png"/>">
+                        Cadastrar Pessoa
+                    </a>                
+                </li>
+                <li>
+                    <a href="relatorio" role="button">
+                        <img src="<c:url value="resources/img/tasks.png"/>">
+                        Mostrar Relatório
+                    </a>                
+                </li>
+                <li>
+                    <a href="login" role="button">
+                        <img src="<c:url value="resources/img/id-card.png"/>">
+                        Efetuar Login
+                    </a>                
+                </li>                
+                <li>
+                    <a href="equipe" role="button">
+                        <img src="<c:url value="resources/img/team.png"/>">
+                        Equipe
+                    </a>                
+                </li>
+            </ul>
         </div>
         
         <footer id="footer">

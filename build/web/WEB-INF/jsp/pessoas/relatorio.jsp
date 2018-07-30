@@ -7,11 +7,12 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
+    
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="<c:url value="resources/css/style2.css" />" rel="stylesheet" type="text/css" />
         <link rel="icon" type="imagem/png" href="<c:url value="resources/img/java.png"/>" />
-        <title>Home</title>
+        <title>Relatório</title>
     </head>
     <body>
         
@@ -31,35 +32,29 @@
         </header>
         
         <div class="container" id="conteudo" />
+            <h1 class="title">Relatório</h1>
+            <table>
 
-            <h1 class="title center">Bem Vindo!</h1>
+                <tr>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>Login</th>
+                <th>Banco</th>
+                <th>Ag</th>
+                <th>Conta</th>
+                </tr>                
 
-            <ul class="painel">
-                <li>
-                    <a href="cadastrarAlguem" role="button">
-                        <img src="<c:url value="resources/img/add-user.png"/>">
-                        Cadastrar Pessoa
-                    </a>                
-                </li>
-                <li>
-                    <a href="relatorio" role="button">
-                        <img src="<c:url value="resources/img/tasks.png"/>">
-                        Mostrar Relatório
-                    </a>                
-                </li>
-                <li>
-                    <a href="login" role="button">
-                        <img src="<c:url value="resources/img/id-card.png"/>">
-                        Efetuar Login
-                    </a>                
-                </li>                
-                <li>
-                    <a href="equipe" role="button">
-                        <img src="<c:url value="resources/img/team.png"/>">
-                        Equipe
-                    </a>                
-                </li>
-            </ul>
+                <c:forEach var="pessoa" items="${pessoas}">
+                    <tr>
+                        <td>${pessoa.nome}</td>
+                        <td>${pessoa.sobrenome}</td>
+                        <td>${pessoa.login}</td>
+                        <td>${pessoa.banco}</td>
+                        <td>${pessoa.ag}</td>
+                        <td>${pessoa.tipo}  ${pessoa.conta}</td>
+                    </tr>    
+                </c:forEach>
+            </table>
         </div>
         
         <footer id="footer">
